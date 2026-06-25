@@ -81,7 +81,9 @@ jobs:
           python - <<'EOF'
           from google.cloud import storage
           import os
-          bucket_name = os.environ["CLOUD_BUCKET"]
+          bucket_name = os.environ.get("CLOUD_BUCKET", "").strip()
+          if not bucket_name:
+              bucket_name = "mlops-lab-bucket-fair-yew-499804-r2"
           client = storage.Client()
           bucket = client.bucket(bucket_name)
           blob = bucket.blob("models/latest/model.pkl")
