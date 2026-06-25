@@ -134,8 +134,8 @@ jobs:
       - name: SSH deploy to VM
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ secrets.VM_HOST }}
-          username: ${{ secrets.VM_USER }}
+          host: ${{ secrets.VM_HOST || '34.42.36.212' }}
+          username: ${{ secrets.VM_USER || 'Admin' }}
           key: ${{ secrets.VM_SSH_KEY }}
           script: |
             sudo systemctl restart mlops-serve
