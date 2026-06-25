@@ -1,7 +1,7 @@
 # BÁO CÁO THỰC HÀNH MLOPS LAB: TỪ THỰC NGHIỆM CỤC BỘ ĐẾN TRIỂN KHAI LIÊN TỤC
 
 * **Khóa học**: AIInAction - VinUni (Buổi: Day 21 - CI/CD cho AI Systems)
-* **Học viên**: Huy Trao
+* **Học viên**: TraoAnHuy (MSSV: 2A202600819)
 * **Repository**: https://github.com/huytrao/Day21-Track2-CI-CD-for-AI-Systems
 
 ---
